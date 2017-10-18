@@ -35,12 +35,15 @@ $green-color: #5db442;
 $intro-wrapper-color: #4ca368;
 $border-radius: 17px;
 $white-color: #ffffff;
+$grey-color: #333333;
+$or-width: 20px;
+$service-package-radius: 14px;
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-@mixin navigation-item-font {
+@mixin font-robotoregular-black {
  	font: normal 14px 'robotoregular';
 	color: #000000;
 }	
@@ -49,9 +52,11 @@ $white-color: #ffffff;
 	max-width: 1170px;
 	padding-left: 15px;
 	padding-right: 15px;
+	text-align: center;
 }
 @mixin h2 {
-	padding-top: 90px;
+	padding-top: 85px;
+	padding-bottom: 35px;
 	font: $body-font;
 	font-size: 48px;
 	color: $body-font-color;
@@ -176,7 +181,7 @@ $white-color: #ffffff;
 	}
 }
 .navigation-item {
-			@include navigation-item-font;
+			@include font-robotoregular-black;
 		}
 
 .intro-wrapper {
@@ -194,6 +199,7 @@ p {
 }	
 .intro h2 {
 	padding-bottom: 15px;
+	padding-top: 90px;
 }
 .intro-img {
 	padding-top: 35px;
@@ -243,12 +249,7 @@ p {
 }
 .sign-up {
 	@include center;
-	text-align: center;
-	padding-bottom: 110px;
-	h2 {
-		padding-top: 85px;
-		padding-bottom: 35px;
-	}
+	padding-bottom: 100px;
 }
 .slide {
 	margin: 0 auto;
@@ -308,7 +309,7 @@ ol {
 	font: $body-font;
 	font-size: 16px;
 	line-height: 28px;
-	color: #333333;
+	color: $grey-color;
 }
 h4 {
 	padding-bottom: 5px;
@@ -321,13 +322,13 @@ h4 {
 	display: inline-block;
 	text-align: center;
 }
-.signup-item {
-	margin-right: 150px;
+.signup-linc {
+	margin-right: 30px;
+	width: 170px;
 	float: left;
 	a {
 		display: block;
 		text-align: center;
-		position: relative;
 	}	
 	&:last-child {
 		margin-right: 0;
@@ -345,8 +346,76 @@ h4 {
 		background-color: $green-color;
 	}
 	p {
-		width: max-content;
 		display: block;
-		position: absolute;
+		font-size: 12px;
+		line-height: 24px;
+		color: $grey-color;
 	} 
+}
+@each $item in community-edition, complete-signup, signup {
+	.#{$item}-item {
+		display: block;
+		background: url('img/#{$item}.png') no-repeat center center;
+	}	
+}
+.service-package {
+	@include center;
+	h2 {
+		padding-bottom: 40px;
+	}
+}
+.slider-service-package {
+	position: relative;
+	display: inline-block;
+	div {
+		width: 140px;
+		height: 30px;
+		line-height: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		border: 1px solid #ececec;
+		a {
+			height: 100%; 
+			display: inline-block;
+			@include font-robotoregular-black;
+			font-size: 12px;
+			color: $grey-color;
+			letter-spacing: 0.5px;
+		}
+		&.active {
+			background-color: $green-color;
+			a {
+				@include font-robotoregular-black;
+				font-size: 12px;
+				color: $white-color;	
+			}
+		}	
+	}
+	span {
+		width: $or-width;
+		height: $or-width;
+		line-height: $or-width;
+		left: 50%;
+		top: 50%;
+		margin-left: $or-width / 2 * -1;
+		margin-top: $or-width / 2 * -1;
+		display: inline-block;;
+		vertical-align: middle;
+		position: absolute;
+		z-index: 2;
+		border-radius: 100%;
+		background-color: $intro-wrapper-color;
+		@include font-robotoregular-black;
+		font-size: 10px;
+		color: $white-color;
+	}
+	.slider-business-package {
+		border-right: none;
+		border-top-left-radius: $service-package-radius;
+		border-bottom-left-radius: $service-package-radius;
+	}
+	.slider-community-package {
+		border-top-right-radius: $service-package-radius;
+		border-bottom-right-radius: $service-package-radius;
+	}
 }

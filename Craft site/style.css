@@ -76,6 +76,7 @@ a {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
   height: 40px;
   line-height: 40px;
   vertical-align: middle; }
@@ -149,6 +150,7 @@ a {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
   height: 80px;
   line-height: 80px;
   vertical-align: middle; }
@@ -187,10 +189,12 @@ a {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
   text-align: center; }
 
 h2 {
-  padding-top: 90px;
+  padding-top: 85px;
+  padding-bottom: 35px;
   font: normal 13px robotolight;
   font-size: 48px;
   color: #000000; }
@@ -202,7 +206,8 @@ p {
   color: #000000; }
 
 .intro h2 {
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  padding-top: 90px; }
 
 .intro-img {
   padding-top: 35px;
@@ -251,10 +256,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  padding-bottom: 110px; }
-  .sign-up h2 {
-    padding-top: 85px;
-    padding-bottom: 35px; }
+  padding-bottom: 100px; }
 
 .slide {
   margin: 0 auto;
@@ -330,16 +332,16 @@ h4 {
   display: inline-block;
   text-align: center; }
 
-.signup-item {
-  margin-right: 150px;
+.signup-linc {
+  margin-right: 30px;
+  width: 170px;
   float: left; }
-  .signup-item a {
+  .signup-linc a {
     display: block;
-    text-align: center;
-    position: relative; }
-  .signup-item:last-child {
+    text-align: center; }
+  .signup-linc:last-child {
     margin-right: 0; }
-  .signup-item div {
+  .signup-linc div {
     width: 46px;
     height: 46px;
     display: inline-block;
@@ -347,11 +349,84 @@ h4 {
     border: solid 1px #61b646;
     border-radius: 100%;
     background-color: #ffffff; }
-  .signup-item .active div {
+  .signup-linc .active div {
     background-color: #5db442; }
-  .signup-item p {
-    width: max-content;
+  .signup-linc p {
     display: block;
-    position: absolute; }
+    font-size: 12px;
+    line-height: 24px;
+    color: #333333; }
+
+.community-edition-item {
+  display: block;
+  background: url("img/community-edition.png") no-repeat center center; }
+
+.complete-signup-item {
+  display: block;
+  background: url("img/complete-signup.png") no-repeat center center; }
+
+.signup-item {
+  display: block;
+  background: url("img/signup.png") no-repeat center center; }
+
+.service-package {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center; }
+  .service-package h2 {
+    padding-bottom: 40px; }
+
+.slider-service-package {
+  position: relative;
+  display: inline-block; }
+  .slider-service-package div {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ececec; }
+    .slider-service-package div a {
+      height: 100%;
+      display: inline-block;
+      font: normal 14px 'robotoregular';
+      color: #000000;
+      font-size: 12px;
+      color: #333333;
+      letter-spacing: 0.5px; }
+    .slider-service-package div.active {
+      background-color: #5db442; }
+      .slider-service-package div.active a {
+        font: normal 14px 'robotoregular';
+        color: #000000;
+        font-size: 12px;
+        color: #ffffff; }
+  .slider-service-package span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    background-color: #4ca368;
+    font: normal 14px 'robotoregular';
+    color: #000000;
+    font-size: 10px;
+    color: #ffffff; }
+  .slider-service-package .slider-business-package {
+    border-right: none;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px; }
+  .slider-service-package .slider-community-package {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px; }
 
 /*# sourceMappingURL=style.css.map */

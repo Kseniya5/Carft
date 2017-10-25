@@ -4,9 +4,9 @@
         <title>Carft Lance</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -39,9 +39,13 @@
                         <h2>Bring your Big Data to Life With Craft Lance</h2>
                         <p>Blue Lance transforms your company's data into rich visuals for you to collect and organize so you can focus 
                         <br>on what matters to you. Stay in the know, spot trends as they happen, and push your business further.</p>
-                        <img class="intro-img" src="img/intro.png">
+                        <div class="intro-img">
+                        	<img src="img/intro.png">
+                        </div>
                         <div class="input">
-                            <input type="e-mail" name="e-mail" placeholder="Enter your email address" required><button class="use-it" type="submit">Use it free</button>
+                        	<form method="post" id="form1">
+                            	<input type="email" name="e-mail" placeholder="Enter your email address" required><button class="use-it" type="submit" form="form1" value="submit">Use it free</button>
+                        	</form>
                         </div>
                         <div class="terms-agree">By clicking Use it free, you agree to the  BlueLance Terms of Service.</div>
                     </div>
@@ -49,8 +53,8 @@
                 <div class="wrapper-sign-up">
                     <div class="sign-up">
                         <h2>Community Sign Up</h2>
-                        <div class='slide active clearfix'>
-                            <div class="slide-center">
+                        <div class='slide active '>
+                            <div class="slide-center clearfix">
                                 <div class="signup-process-image">
                                     <a href="#"></a>
                                 </div>
@@ -96,10 +100,177 @@
                         </div><div class="slider-community-package"><a href="#">Community Edition</a></div>
                         <span>OR</span>
                     </div>
+                    <div class="slide-business-package active">
+                        <div class="tarif-plan">
+                            <div class="line"></div>
+                            <p>BASIC</p>
+                            <div class="wrapper-value">
+                            	<div class="wrapper-inside-value">
+                            		<div class="value">&#36 59 
+                            			<br><span class="period">per month</span>
+                            		</div>
+                            	</div>                            
+                        	</div>
+                            <ul>
+                                <li class="disponible">20 Keyword</li>
+                                <li class="non-disponible">No Time Tracking</li>
+                                <li class="disponible">230 - Man Hour</li>
+                                <li class="non-disponible">News Letter Available</li>
+                            </ul>
+                            <button type="submit" value="Submit">PURCHASE</button>
+                        </div><div class="tarif-plan active">
+                            <div class="line"></div>
+                            <p>STANDARD</p>
+                            <div class="wrapper-value">
+                            	<div class="wrapper-inside-value">
+                            		<div class="value">&#36 79 
+                            			<br><span class="period">per month</span>
+                            		</div>
+                            	</div>	
+                            </div>	
+                            <ul>
+                                <li class="disponible">20 Keyword</li>
+                                <li class="non-disponible">No Time Tracking</li>
+                                <li class="disponible">230 - Man Hour</li>
+                                <li class="non-disponible">News Letter Available</li>
+                            </ul>
+                            <button type="submit" value="Submit">PURCHASE</button>
+                        </div><div class="tarif-plan">
+                            <div class="line"></div>
+                            <p>UNLIMITED</p>
+                            <div class="wrapper-value">
+                            	<div class="wrapper-inside-value">
+                            		<div class="value">&#36 99 
+                            			<br><span class="period">per month</span>
+                            		</div>
+                            	</div>	
+                            </div>	
+                            <ul>
+                                <li class="disponible">20 Keyword</li>
+                                <li class="non-disponible">No Time Tracking</li>
+                                <li class="disponible">230 - Man Hour</li>
+                                <li class="non-disponible">News Letter Available</li>
+                            </ul>
+                            <button type="submit" value="Submit">PURCHASE</button>
+                        </div>
+                    </div>
                 </div>
-
-
-
+				<div class="wrapper-analytics-platform">
+					<div class="analytics-platform">
+						<h2>A Comprehensive Data Integration and <br>Business Analytics Platform</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/book-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#" class="active">
+									<img src="img/insect-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#">
+									<img src="img/settings-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#">
+									<img src="img/arrow-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#">
+									<img src="img/caffe-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#">
+									<img src="img/leaf-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#">
+									<img src="img/plane-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li><li>
+								<a href="#">
+									<img src="img/folder-img.png">
+									<div class="line"></div>
+									<h3>Community Edition</h3>
+									<p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
             </div>
-            <div class="footer">    
-            </div>
+            <div class="footer">
+        		<div class="wrapper-footer-menu">
+        			<div class="footer-menu clearfix">
+        				<div class="newsletter">
+        					<h3>Newsletter</h3>
+        					<p>Insights await in your company's data. Bring them into focus with BlueLance.</p>
+    						<form id="form2" method="post" class="clearfix">
+    							<input type="email" name="e-mail" placeholder="enter your email" required><button type="submit" form="form2" value="submit"></button>	
+    						</form>
+        				</div>
+        				<div class="quck-links">
+        					<h3>Quck Links</h3>
+        					<ul>
+        						<li><a href="#">POWER BI DESKTOP</a></li>
+        						<li><a href="#">MOBILE</a></li>
+        						<li><a href="#">SEE ALL DOWNLOADS</a></li>
+        						<li><a href="#">POWER BI DESKTOP</a></li>
+        						<li><a href="#">MOBILE</a></li>
+        						<li><a href="#">SEE ALL DOWNLOADS</a></li>
+        					</ul>
+        				</div>
+        				<div class="legal">
+        					<h3>Legal</h3>
+        					<ul>
+        						<li><a href="#">PRIVACY &#38; COOKIES</a></li>
+        						<li><a href="#">TERMS OF USE</a></li>
+        						<li><a href="#">TRADEMARKS</a></li>
+        					</ul>
+        				</div>
+        				<div class="information">
+        					<h3>Information</h3>
+        					<ul>
+        						<li><a href="#">SUPPORT</a></li>
+        						<li><a href="#">DEVELOPERS</a></li>
+        						<li><a href="#">BLOG</a></li>
+        						<li><a href="#">NEWSLETTER</a></li>
+        						<li><a href="#">PYRAMID ANALYTICS</a></li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>		
+        		<div class="footer-last clearfix">
+        			<div class="footer-logo">
+        				<img src="img/logo-footer.png">
+        			</div>
+        			<div class="designed-by">
+        				<p>&#9400; Designed by Moin Khan. All Rights Reserved.
+        				<br>Made by BlueLance</p>
+        			</div>
+        		</div>
+        	</div>  
+        </div>
+    </body>
+</html>        

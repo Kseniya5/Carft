@@ -1,0 +1,79 @@
+.wrapper-contacts {
+	background-color: $background-contacts;	
+}
+.contacts {
+	@include center;
+	height: $height-contacts;
+	line-height: $height-contacts;
+	vertical-align: middle;
+	.social-link {
+		float: left;
+		li {
+		display:$display-inline-block;
+		margin-right: 7px;
+		}
+	}	
+	.telephone, .e-mail {
+		float: right;
+		display: $display-inline-block;
+		font: $body-font;
+		color: $header-font-color;
+		line-height: $height-contacts;
+		vertical-align: middle;
+		&:before {
+			@include before;
+		}
+	}
+}	
+.facebook-icon {
+	width: 7px;
+}
+.twitter-icon {
+	width: 11px;
+}
+.google-icon {
+	width: 12px;
+}
+.linkenIn-icon {
+	width: 12px;
+}
+.telephone {
+	padding-right: 40px;
+}
+.telephone {
+	&:before {
+		margin-right: 10px;
+		width: 12px;
+		height: 12px;
+		background-image: url(../img/telephone.png);
+		
+	}	
+}
+.e-mail {
+	&:before {
+		margin-right: 5px;
+		width: 14px;
+		height: 11px;
+		background-image: url(../img/e-mail.png);
+	}
+}
+.logo { 
+	$navigation-menu-height: 60px;
+	line-height: $navigation-menu-height;
+	float: none;
+	text-align: left;
+	@include medium-screen {
+		float: left;
+		line-height: $navigation-menu-height;
+	}
+	a {
+		display: block;
+		@include medium-screen {
+			line-height: 80px;
+		}
+		img {
+			display: inline-block;
+			vertical-align: middle;
+		}		
+	}
+}

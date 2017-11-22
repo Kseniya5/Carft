@@ -1,0 +1,39 @@
+.navigation-menu {
+	@include center;
+	vertical-align: middle;
+	$navigation-menu-height: 60px;
+	height: 2 * $navigation-menu-height;
+	line-height: $navigation-menu-height;
+	@include medium-screen {
+		$navigation-menu-height: 80px;
+		height: $navigation-menu-height;
+		line-height: $navigation-menu-height;
+	}
+}
+.navigation {	
+	float: none;
+	text-align: left;
+	@include medium-screen {
+		float: right;
+		text-align: none;
+	}
+	li {
+		margin-right: 8%;
+		@include small-screen {
+			margin-right: 47px;	
+		}
+		display: $display-inline-block;
+		&:last-child {
+			margin-right: 0;
+		}	
+		.sign-in {
+			padding: 5px 25px;
+			color: $green-color;
+			border-radius: 13px;
+			border: 1px solid $green-color;
+		}
+	}
+}
+.navigation-item {
+	@include font-robotoregular-black;
+}

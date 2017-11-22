@@ -1,0 +1,108 @@
+.footer {
+	background-color: #efefef;
+}
+.wrapper-footer-menu {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #e1e2e3;
+	padding-top: 25px;
+	@include large-screen {
+		padding-top: 35px;
+	}
+}
+.footer-menu, .footer-last {
+	@include center;
+}
+.footer-menu {
+	text-align: left;
+	div {
+		float: left;
+		margin-right: 8%;
+		&:last-child {
+			margin-right: 0;
+		}
+		padding-top: 30px;
+		@include large-screen {
+			padding-top: none;
+		}
+
+	}
+	.newsletter {
+		width: 330px;
+		@include medium-screen {
+			float: none;
+		}
+		@include large-screen {
+			float: left;
+		}
+	}
+	h3 {
+		padding-bottom: 25px;
+		line-height: 22px;
+	}
+	p {
+		padding-bottom: 20px;
+		font: $body-font;
+		color: $grey-color;
+		line-height: 24px;
+		letter-spacing: -0.5px;
+	}	
+	li a {
+		font: $body-font;
+		letter-spacing: 0.7px;
+		text-transform: uppercase;
+		color: $grey-color;
+		font-size: 9px;
+		line-height: 27px;
+		@include small-screen {
+			font-size: 11px;	
+		}
+        @include medium-screen {
+        	font-size: 12px;
+        }
+        @include large-screen {
+        	font-size: 13px;
+        	line-height: 30px;
+        }
+	}
+}
+.footer-last {
+	height: 90px;
+	@include large-screen {
+		height: 125px;
+	}
+
+	.footer-logo {
+		float: left;
+		display: inline-block;
+		line-height: 90px;
+		@include large-screen {
+			line-height: 125px;	
+		}
+	}
+	.designed-by {
+		width: 50%;
+		@include small-screen {
+			width: auto;
+		}
+		float: right;
+		text-align: right;
+		display: flex;
+		align-items: center;
+		height: 90px;
+		@include large-screen {
+			height: 125px;	
+		}
+		p {
+			margin-left: auto;
+			@include small-screen {
+				width: 79%;	
+			}
+			line-height: 17px;
+			color: $additional-bodyfont-color;
+			font-size: 10px;
+			@include medium-screen {
+				font-size: 11px;
+			}
+		}
+	}
+}

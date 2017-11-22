@@ -1,0 +1,76 @@
+.input {
+	input {
+		@include border-input;
+		padding: 0;
+		padding-left: 20px;
+		width: 210px - 20px;
+		height: 31px;
+		font: $body-font;
+		font-size: 14px;
+		border-right: none;
+		border-top-left-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+		&::-webkit-input-placeholder {
+			color: #cccccc;
+		}
+		&::-moz-placeholder {
+    		color: #cccccc;
+		}
+	}
+	button {
+		@include border-input;
+		width: 80px;
+		height: 35px;
+		font: $body-font;
+		font-size: 14px;
+		color: $white-color;
+		background-color: #37804e;
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+
+	}
+}
+.footer-menu {
+	form {
+		display: inline-block;
+		input {
+			width: 275px - 10px;
+			@include newsletter-form;
+			padding-left: 10px;
+			&::-webkit-input-placeholder {
+				@include email-placeholder;
+			}
+			&::-moz-placeholder {
+				@include email-placeholder;
+			}
+		}	
+	}
+	button {
+		width: 55px;
+		@include newsletter-form;
+		background: url(../img/arrow-button.png) no-repeat center center;
+		background-color: $green-color;
+	}
+}
+.tarif-plan {
+	.purchase {
+		@include purchase-link;
+		@include font-purchase-link;
+		background-color: $white-color;
+		border-radius: $service-package-radius;
+		font-size: 10px;
+		line-height: 30px;
+		width: 85%;
+		@include medium-screen {
+			width: 125px;
+		}
+	}
+	&.active {
+		.purchase { 
+			@include purchase-link-active;
+			@include font-purchase-link-active;
+			font-size: 10px;
+			line-height: 30px;	
+		}
+	}	
+}	

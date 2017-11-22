@@ -1,0 +1,116 @@
+@mixin font-robotoregular-black {
+ 	font: normal 14px 'robotoregular';
+	color: #000000;
+}
+@mixin font-robotomedium-grey {
+	font: normal 14px 'robotomedium';
+	color: $grey-color;
+}
+@mixin center {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+@mixin main-header {
+	padding-bottom: 35px;
+	font: $body-font;
+	color: $body-font-color;
+	letter-spacing: -0.1px;
+	padding-top: $padding-top-h2;
+	font-size: 25px;
+	line-height: 29px;
+	@include large-screen {
+		padding-top: 90px;
+		font-size: 48px;
+		line-height: 58px;
+	}
+}		
+@mixin p {
+	font: $body-font;
+	color: $body-font-color;
+	font-size: 14px;
+	line-height: 22px;
+	@include large-screen {
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+@mixin border-input {
+	border: 2px solid #37804e;
+}
+@mixin sliders {
+	width: 28px;
+	height: 14px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: left;
+}
+@mixin round {
+	border-radius: 100%;
+}
+@mixin before {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	background-repeat: no-repeat;	
+}
+@mixin purchase-link {
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	border: $border-light-grey;
+}
+@mixin font-purchase-link {
+	@include font-robotoregular-black;
+	font-size: 12px;
+	color: $grey-color;
+	letter-spacing: 0.5px;
+}
+@mixin purchase-link-active {
+	background-color: $green-color;
+}
+@mixin font-purchase-link-active {
+	@include font-robotoregular-black;
+	font-size: 12px;
+	color: $white-color;	
+}
+@mixin block-padding-bottom {
+	padding-bottom: $padding-bottom-small-screen;
+	@include large-screen {
+		padding-bottom: 100px;	
+	}
+}
+@mixin box-shadow {
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(64,64,64,0.3);
+	-moz-box-shadow: 0px 0px 6px 2px rgba(64,64,64,0.3);
+	box-shadow: 0px 0px 6px 2px rgba(64,64,64,0.3);
+}
+@mixin newsletter-form {
+	padding: 0;
+	height: 45px;
+	display: block;
+	float: left;
+	border: none;
+}
+@mixin email-placeholder {
+	font: italic 12px/24px 'robotothin';
+	color: #dedede;
+}
+@mixin small-screen {
+	@media (min-width: 480px) {
+		@content;
+	}
+}
+@mixin medium-screen {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin large-screen {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}

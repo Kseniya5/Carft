@@ -1,0 +1,13 @@
+@each $social-link in facebook, twitter, google, linkenIn {
+	.#{$social-link}-icon {
+		height: 12px;
+		display: block;
+		background-image: url('../img/#{$social-link}.png');
+	}	
+}
+@each $item in community-edition, complete-signup, signup {
+	.#{$item}-item {
+		display: block;
+		background: url('../img/#{$item}.png') no-repeat center center;
+	}	
+}

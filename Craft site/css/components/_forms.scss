@@ -1,5 +1,9 @@
 .input {
+	form {
+		display: inline-block;
+	}
 	input {
+		float: left;
 		@include border-input;
 		padding: 0;
 		padding-left: 20px;
@@ -18,8 +22,9 @@
 		}
 	}
 	button {
+		float: left;
+		width: auto;
 		@include border-input;
-		width: 80px;
 		height: 35px;
 		font: $body-font;
 		font-size: 14px;

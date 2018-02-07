@@ -1,0 +1,33 @@
+.facebook-icon {
+  height: 12px;
+  display: block;
+  background-image: url("../img/facebook.png"); }
+
+.twitter-icon {
+  height: 12px;
+  display: block;
+  background-image: url("../img/twitter.png"); }
+
+.google-icon {
+  height: 12px;
+  display: block;
+  background-image: url("../img/google.png"); }
+
+.linkenIn-icon {
+  height: 12px;
+  display: block;
+  background-image: url("../img/linkenIn.png"); }
+
+.community-edition-item {
+  display: block;
+  background: url("../img/community-edition.png") no-repeat center center; }
+
+.complete-signup-item {
+  display: block;
+  background: url("../img/complete-signup.png") no-repeat center center; }
+
+.signup-item {
+  display: block;
+  background: url("../img/signup.png") no-repeat center center; }
+
+/*# sourceMappingURL=_functions.css.map */

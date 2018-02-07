@@ -144,9 +144,9 @@ a {
   font: normal 14px 'robotoregular';
   color: #000000; }
 
-.input form {
+.input-email form {
   display: inline-block; }
-.input input {
+.input-email input {
   float: left;
   border: 2px solid #37804e;
   padding: 0;
@@ -158,11 +158,11 @@ a {
   border-right: none;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px; }
-  .input input::-webkit-input-placeholder {
+  .input-email input::-webkit-input-placeholder {
     color: #cccccc; }
-  .input input::-moz-placeholder {
+  .input-email input::-moz-placeholder {
     color: #cccccc; }
-.input button {
+.input-email button {
   float: left;
   width: auto;
   border: 2px solid #37804e;

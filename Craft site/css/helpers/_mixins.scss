@@ -1,6 +1,6 @@
 @mixin font-robotoregular-black {
  	font: normal 14px 'robotoregular';
-	color: #000000;
+	color: $body-font-color;
 }
 @mixin font-robotomedium-grey {
 	font: normal 14px 'robotomedium';
@@ -38,7 +38,7 @@
 	}
 }
 @mixin border-input {
-	border: 2px solid #37804e;
+	border: 2px solid $button-background-color;
 }
 @mixin sliders {
 	width: 28px;
@@ -97,7 +97,7 @@
 }
 @mixin email-placeholder {
 	font: italic 12px/24px 'robotothin';
-	color: #dedede;
+	color: $placeholder-color;
 }
 @mixin small-screen {
 	@media (min-width: 480px) {

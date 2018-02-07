@@ -1,9 +1,9 @@
 .footer {
-	background-color: #efefef;
+	background-color: $footer-color;
 }
 .wrapper-footer-menu {
 	padding-bottom: 40px;
-	border-bottom: 1px solid #e1e2e3;
+	border-bottom: 1px solid $footer-border-color;
 	padding-top: 25px;
 	@include large-screen {
 		padding-top: 35px;

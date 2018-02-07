@@ -22,7 +22,7 @@
 		@include small-screen {
 			margin-right: 47px;	
 		}
-		display: $display-inline-block;
+		display: inline-block;
 		&:last-child {
 			margin-right: 0;
 		}	

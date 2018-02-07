@@ -1,4 +1,4 @@
-.input {
+.input-email {
 	form {
 		display: inline-block;
 	}
@@ -15,10 +15,10 @@
 		border-top-left-radius: $border-radius;
 		border-bottom-left-radius: $border-radius;
 		&::-webkit-input-placeholder {
-			color: #cccccc;
+			color: $grey-background-color;
 		}
 		&::-moz-placeholder {
-    		color: #cccccc;
+    		color: $grey-background-color;
 		}
 	}
 	button {
@@ -29,7 +29,7 @@
 		font: $body-font;
 		font-size: 14px;
 		color: $white-color;
-		background-color: #37804e;
+		background-color: $button-background-color;
 		border-top-right-radius: $border-radius;
 		border-bottom-right-radius: $border-radius;
 

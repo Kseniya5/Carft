@@ -9,13 +9,13 @@
 	.social-link {
 		float: left;
 		li {
-		display:$display-inline-block;
+		display: inline-block;
 		margin-right: 7px;
 		}
 	}	
 	.telephone, .e-mail {
 		float: right;
-		display: $display-inline-block;
+		display: inline-block;
 		font: $body-font;
 		color: $header-font-color;
 		line-height: $height-contacts;

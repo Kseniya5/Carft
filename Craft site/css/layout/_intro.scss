@@ -1,0 +1,45 @@
+.intro-wrapper {
+	background-color: $intro-wrapper-color;
+}	
+.intro {
+	@include center;
+	text-align: center;
+	p {
+		margin: auto;
+		max-width: 780px;
+	}
+}
+.main-header {
+	@include main-header;
+}			
+p {
+	@include p;
+}	
+.intro .main-header {
+	padding-bottom: 15px;
+	padding-top: $padding-top-h2;
+	@include large-screen {
+		padding-top: 95px;	
+	}
+}
+.intro-img {
+	padding-top: 35px;
+	img {
+		max-width: 100%;
+	}
+	padding-bottom: $padding-bottom-small-screen;
+	@include large-screen {
+		padding-bottom: 81px;	
+	}
+}
+.terms-agree {
+	padding-top: 13px;
+	font: normal 14px 'robotothin';
+	color: $white-color;
+	padding-bottom: $padding-bottom-small-screen;
+	font-size: 12px;
+	@include large-screen {
+		padding-bottom: 70px;
+		font-size: 14px;
+	}
+}

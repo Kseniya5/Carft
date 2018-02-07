@@ -1,0 +1,156 @@
+.service-package {
+	@include block-padding-bottom;
+	@include center;
+	.main-header {
+		padding-bottom: 41px;
+	}
+}
+.slider-service-package {
+	margin-bottom: 50px;
+	position: relative;
+	display: inline-block;
+	div {
+		width: 140px;
+		@include purchase-link;
+		a {
+			height: 100%; 
+			display: inline-block;
+			@include font-purchase-link;
+		}
+		&.active {
+			@include purchase-link-active;
+			a {
+				@include font-purchase-link-active;
+			}
+		}	
+	}
+	span {
+		width: $or-width;
+		height: $or-width;
+		left: 50%;
+		top: 50%;
+		margin-left: $or-width / 2 * -1;
+		margin-top: $or-width / 2 * -1;
+		display: inline-block;;
+		vertical-align: middle;
+		position: absolute;
+		z-index: 2;
+		@include round;
+		background-color: $intro-wrapper-color;
+		@include font-robotoregular-black;
+		font-size: 10px;
+		line-height: $or-width;
+		color: $white-color;
+	}
+	.slider-business-package {
+		border-right: none;
+		border-top-left-radius: $service-package-radius;
+		border-bottom-left-radius: $service-package-radius;
+	}
+	.slider-community-package {
+		border-top-right-radius: $service-package-radius;
+		border-bottom-right-radius: $service-package-radius;
+	}
+}
+.slide-business-package {
+	&.active {
+		display: block;
+		text-align: center;
+	}	
+}
+.slide-business-package {
+	display: none;
+}
+.tarif-plan {
+	padding-bottom: 40px;
+	display: inline-block;
+	border: $border-light-grey;
+	&:last-child {
+		margin-right: 0;
+	}
+	margin-right: 5%;
+	width: 26%;
+	@include large-screen {
+		margin-right: 50px;
+		width: 270px/ 1200px * 100%;
+	}
+	p {
+		@include font-robotomedium-grey;
+		padding-bottom: 25px + $value-width / 2;
+		border-bottom: $border-light-grey;
+	}
+	.wrapper-value {
+		margin: 0 auto;
+		margin-top: ($value-width + 2px + 2px)/ 2 * -1;
+		margin-bottom: 22px;
+		width: $value-width + 2px;
+		height: $value-width + 2px;
+		@include round;
+		border: 2px solid $light-grey;
+		text-align: center;
+	}
+	.wrapper-inside-value {
+		width: $value-width;
+		height: $value-width;
+		display: table-cell;
+		vertical-align: middle;
+		@include round;
+		border: 1px solid $border-wrapper-color;
+		background-color: $white-color;
+		.value {
+			display: block;
+			@include font-robotomedium-grey;
+			margin: 0 auto;
+			width: 55%;
+			font-size: 23px;
+			line-height: 15px;
+			letter-spacing: -1.5px;
+		}
+		.period {
+			font: $body-font;
+			font-size: 10px;
+			color: $additional-bodyfont-color;
+			line-height: 6px;
+			letter-spacing: 0;
+		}
+	}
+	ul {
+		padding-bottom: 25px;
+	}
+	li {
+		@include font-robotomedium-grey;
+		font-size: 12px;
+		letter-spacing: 0.4px;
+		color: $additional-bodyfont-color;
+		line-height: 29px;
+		@include large-screen {
+			line-height: 30px;
+		}
+	}
+	.disponible:before {
+	@include before;
+	padding-right: 5px;
+	width: 9px;
+	height: 9px;
+	background-image: url(../img/disponible.png);
+	}
+	.non-disponible:before {
+	@include before;
+	padding-right: 5px;
+	width: 7px;
+	height: 7px;
+	background-image: url(../img/non-disponible.png);
+	}
+	&.active {
+		.line {
+			background-color: $green-color;
+		}
+	}
+}
+.line {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 75px;
+	height: 2px;
+	background-color: $grey-background-color;
+}

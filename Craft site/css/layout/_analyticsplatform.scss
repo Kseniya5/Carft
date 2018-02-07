@@ -1,0 +1,82 @@
+.wrapper-analytics-platform {
+	background-color: $light-grey;
+}
+.analytics-platform {
+	@include center;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 1200px;
+	padding-bottom: 30px;
+	@include large-screen {
+		padding-bottom: 70px;
+	}
+	.main-header {
+		padding-bottom: 45px;
+	}
+	li {
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-bottom: 30px;
+		display: inline-block;
+		text-align: center;
+		@include box-shadow;
+		background-color: $white-color;
+		a {
+			margin: 0 auto;
+			padding: 35px 10px 0 10px;
+			display: block;
+			padding-top: 30px;
+			width: 180px;
+			height: 275px;
+			@include large-screen {
+				padding-top: 35px;
+				width: 250px - 1px - 1px;
+				height: 285px;
+			}
+			h3 {
+				color: $grey-color;
+				line-height: 24px;
+				text-transform: uppercase;
+				padding-bottom: 15px;
+				@include large-screen {
+					padding-bottom: 25px;
+				}
+			}
+			p {
+				font: $body-font;
+				font-size: 12px;
+				line-height: 22px;
+				letter-spacing: -0.1px;
+				color: $additional-bodyfont-color; 
+			}
+			img {
+				padding-bottom: 15px;
+			}
+			&.active {
+				background-color: $green-color;	
+				.line {
+					background-color: $white-color;
+				}
+				p {
+					color: $white-color;
+				}
+				h3 {
+					color: $white-color;
+				}
+			}
+			.line {
+				margin-bottom: 15px;
+				width: 70px;
+				background-color: $light-grey;
+			}
+		}
+	}
+}
+h3 {
+	@include font-robotoregular-black;
+	font-size: 16px;
+	@include small-screen {
+		font-size: 15px;
+	}
+	letter-spacing: -0.1px;
+}

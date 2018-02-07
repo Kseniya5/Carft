@@ -1,0 +1,121 @@
+.wrapper-sign-up {
+	background-color: $light-grey;
+}
+.sign-up {
+	@include center;
+	@include block-padding-bottom;
+	.main-header {
+		padding-bottom: 30px;
+		@include large-screen {
+			padding-bottom: 40px;
+		}
+	}
+}
+.slide {
+	margin: 0 auto;
+	max-width:  630px;
+	background-color: $white-color;
+	@include box-shadow;
+	.slide-center {
+		display: inline-block;
+		text-align: center;
+		.signup-process {
+			padding-top: 30px;
+			padding-bottom: 57px;
+		}
+	}
+	&.active {
+		display: block;
+	}
+	display: none;
+}
+.signup-process-image {
+	padding-right: 30px;
+	padding-top: 105px;
+	float: left;
+	vertical-align: middle;
+	a {
+	width: 69px;
+	height: 57px;
+	display: inline-block;	
+	background: url(../img/signup-process-image.png) no-repeat center center;
+	}
+}
+.signup-process {
+	float: left;
+	text-align: left;
+}
+.slider-next a {
+	padding-bottom: 10px;
+	@include sliders;
+	background-image: url(../img/slider-next.png);
+}
+.slider-previous a {
+	padding-bottom: 25px;
+	@include sliders;
+	background-image: url(../img/slider-previous.png);	
+}
+ol {
+	margin-left: 1.3em;
+	li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: decimal;
+	}
+}
+.signup-process li {
+	font: $body-font;
+	line-height: 29px;
+	color: $grey-color;
+	font-size: 15px;
+	@include large-screen {
+		font-size: 16px;
+	}
+}
+h4 {
+	padding-bottom: 10px;
+	font: normal 26px/28px 'robotothin';
+	text-transform: uppercase;
+	color: $green-color;
+}
+.signup-lincs {
+	padding-top: 40px;
+	display: inline-block;
+	text-align: center;
+}
+.signup-linc {
+	margin-right: 30px;
+	float: left;
+	width: 27%;
+	@include medium-screen {
+		width: 150px;
+	}
+	@include large-screen {
+		width: 170px;	
+	}
+	a {
+		display: block;
+		text-align: center;
+	}	
+	&:last-child {
+		margin-right: 0;
+	}	
+	div {
+		width: 46px;
+		height: 46px;
+		display: inline-block;
+		text-align: center;
+		border: solid 1px $border-link-color;
+		@include round;
+		background-color: $white-color;
+	}
+	& .active  div {
+		background-color: $green-color;
+	}
+	p {
+		display: block;
+		font-size: 12px;
+		line-height: 24px;
+		color: $grey-color;
+	} 
+}

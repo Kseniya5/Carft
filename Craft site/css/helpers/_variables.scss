@@ -1,21 +1,31 @@
 $body-font: normal 13px robotolight;
+
+$height-contacts: 40px;
+$navigation-menu-height: 2 * $height-contacts;
+$or-width: 20px;
+$value-width: 90px;
+$newsletter-width: 330px;
+
+$padding-top-h2: 55px; 
+$padding-bottom-small-screen: 55px;
+
+$border-radius: 17px;
+$service-package-radius: 14px;
+$border-light-grey: 1px solid $light-grey;
+
+$intro-wrapper-color: #4ca368;
+$light-grey: #ececec;
 $body-font-color: #000000;
 $header-font-color: #fefefe;
 $background-contacts: #282828;
-$display-inline-block: inline-block;
-$height-contacts: 40px;
-$navigation-menu-height: 2 * $height-contacts;
+$placeholder-color: #dedede;
 $green-color: #5db442;
-$intro-wrapper-color: #4ca368;
-$border-radius: 17px;
 $white-color: #ffffff;
 $grey-color: #333333;
-$light-grey: #ececec;
-$border-light-grey: 1px solid $light-grey;
-$or-width: 20px;
-$service-package-radius: 14px;
-$value-width: 90px;
+$grey-background-color: #cccccc;
+$border-link-color: #61b646;
+$border-wrapper-color: #60b546;
+$button-background-color: #37804e;
 $additional-bodyfont-color: #777777;
-$newsletter-width: 330px;
-$padding-top-h2: 55px; 
-$padding-bottom-small-screen: 55px;
+$footer-color: #efefef;
+$footer-border-color: #e1e2e3;
